@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>KFC PAGINA</title>
+    <link rel="shortcut icon" href="./img/chicken-head-e-sport-logo-illustration-design-templates-simple-and-modern-concept-vector.webp">
+    <link rel="stylesheet" href="style/sytle.css">
+</head>
+<body>
+
+<header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img class="mb-3" src="./img/Logo.png" class="float-end" style="width: 400px;" alt="imagen">
+                </div>
+            </div>
+            <div class="container md-12">
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-danger kfc-logout" onclick="cerrarSesion()">
+    🚪                Cerrar sesión
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" style="width: 70%;">
+                <div class="col-md-6">
+                    <select id="select_idioma" onchange="cambiarIdioma()" class="form-select">
+                        <option selected disabled>Idioma</option>
+                        <option value="es">Español</option>
+                        <option value="en">ingles</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <select id="select_theme" onchange="actualizarTheme()" class="form-select">
+                        <option selected disabled>Tema</option>
+                        <option value="light">Claro</option>
+                        <option value="dark">Oscuro</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+
+<main>
+    <center>
+        <section>
+
+            <div class="container">
+            <div class="row">
+
+            <div class="card" style="width: 18rem;">
+            <img src="./img/hamburguesa-1.webp">
+            <div class="card-body">
+            <h5 class="card-title">8.900</h5>
+            <h5 data-key="0.titulo" class="card-title">BBQ Crunch</h5>
+            <p data-key="0.descripcion" class="card-text">1 Sandwich BBQ Crunch (1 Filete de pollo apanado)</p>
+            </div>
+            <div class="p-3">
+            <a data-key="0.boton" href="#" class="btn btn-danger">Comprar</a>
+            </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+            <img src="./img/hamburguesa-2.webp">
+            <div class="card-body">
+            <h5 class="card-title">8.900</h5>
+            <h5 data-key="1.titulo" class="card-title">Kentucky Sandwich</h5>
+            <p data-key="1.descripcion" class="card-text">1 Kentucky hamburguesa / Sandwich(1 Filete de pechuga de pollo apanado, pepinillos,...)</p>
+            </div>
+            <div class="p-3">
+            <a data-key="1.boton" href="#" class="btn btn-danger">Comprar</a>
+            </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+            <img src="./img/hamburguesa-3.webp">
+            <div class="card-body">
+            <h5 class="card-title">10.000</h5>
+            <h5 data-key="2.titulo" class="card-title">Combo BBQ Crunch</h5>
+            <p data-key="2.descripcion" class="card-text">1 Sandwich BBQ Crunch (1 Filete de pollo apanado) + 1 Papa Pequeña + 1 Gaseosa PET ...</p>
+            </div>
+            <div class="p-3">
+            <a data-key="2.boton" href="#" class="btn btn-danger">Comprar</a>
+            </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+            <img src="./img/hamburguesa-4.webp">
+            <div class="card-body">
+            <h5 class="card-title">8.900</h5>
+            <h5 data-key="3.titulo" class="card-title">Kentucky Coronel Sandwich</h5>
+            <p data-key="3.descripcion" class="card-text">1 Kentucky Coronel hamburguesa / Sandwich (1 Filete de pechuga de pollo apanado, Ensalada...)</p>
+            </div>
+            <div class="p-3">
+            <a data-key="3.boton" href="#" class="btn btn-danger">Comprar</a>
+            </div>
+            </div>
+
+            </div>
+            </div>
+
+            <div class="container">
+            <div class="row">
+
+            <div class="card" style="width: 18rem;">
+            <img src="./img/hamburguesa-5.webp">
+            <div class="card-body">
+            <h5 class="card-title">8.900</h5>
+            <h5 data-key="4.titulo" class="card-title">Combo Kentucky Sandwich</h5>
+            <p data-key="4.descripcion" class="card-text">1 Kentucky hamburguesa /Sandwich (1 Filete de pechuga de pollo apanado, pepinillos,...)</p>
+            </div>
+            <div class="p-3">
+            <a data-key="4.boton" href="#" class="btn btn-danger">Comprar</a>
+            </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+            <img src="./img/hamburguesa-6.webp">
+            <div class="card-body">
+            <h5 class="card-title">8.900</h5>
+            <h5 data-key="5.titulo" class="card-title">Combo Kentucky Coronel Sandwich</h5>
+            <p data-key="5.descripcion" class="card-text">1 Kentucky Coronel hamburguesa / Sandwich (1 Filete de pechuga de pollo apanado, Ensalada...).</p>
+            </div>
+            <div class="p-3">
+            <a data-key="5.boton" href="#" class="btn btn-danger">Comprar</a>
+            </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+            <img src="./img/hamburguesa-7.webp">
+            <div class="card-body">
+            <h5 class="card-title">8.900</h5>
+            <h5 data-key="6.titulo" class="card-title">Sandwich Crispy BBQ</h5>
+            <p data-key="6.descripcion" class="card-text">1 Sandwich Crispy BBQ (1 Filete de pechuga extra grande, triple empanizado, cebolla crisp...).</p>
+            </div>
+            <div class="p-3">
+            <a data-key="6.boton" href="#" class="btn btn-danger">Comprar</a>
+            </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+            <img src="./img/hamburguesa-8.webp">
+            <div class="card-body">
+            <h5 class="card-title">8.900</h5>
+            <h5 data-key="7.titulo" class="card-title">Combo Sandwich Crispy BBQ</h5>
+            <p data-key="7.descripcion" class="card-text">1 Sandwich Crispy BBQ (1 Filete de pechuga extra grande, triple empanizado, cebolla crisp...)</p>
+            </div>
+            <div class="p-3">
+            <a data-key="7.boton" href="#" class="btn btn-danger">Comprar</a>
+            </div>
+            </div>
+
+            </div>
+            </div>
+
+        </section>
+    </center>
+</main>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-links">
+            <h4>Enlaces importantes</h4>
+            <ul>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Términos de servicio</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h4>Síguenos</h4>
+            <ul>
+                <li><a href="#" class="social-icon">Facebook</a></li>
+                <li><a href="#" class="social-icon">Instagram</a></li>
+                <li><a href="#" class="social-icon">Twitter</a></li>
+                <li><a href="#" class="social-icon">YouTube</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contáctanos</h4>
+            <p>Teléfono: +123 456 789</p>
+            <p>Email: contacto@kfc.com</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 KFC. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./script/script.js"></script>
+<script>
+  // Si NO está logueado → fuera
+  if (localStorage.getItem("logueado") !== "true") {
+    window.location.href = "inicio.html";
+  }
+</script>
+</body>
+</html>

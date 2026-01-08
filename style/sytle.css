@@ -1,0 +1,157 @@
+* {
+    padding: 0%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #000;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+select {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Estilos para el modo oscuro */
+body.oscuro {
+  background-color: #121212;
+  color: #000000;
+}
+
+/* Estilos generales */
+section {
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centra todo el contenido en el centro */
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo del contenedor de las tarjetas */
+.container {
+    display: flex;
+    justify-content: center; /* Centra las tarjetas dentro del contenedor */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en pantallas más pequeñas */
+    gap: 20px; /* Espacio entre cada tarjeta */
+    margin-bottom: 30px; /* Espacio inferior entre las filas de tarjetas */
+}
+
+/* Estilo para cada tarjeta */
+.card {
+    margin: 0 auto; /* Centra las tarjetas dentro de su columna */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega una sombra sutil alrededor de las tarjetas */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición para el hover */
+    margin: 20px;
+}
+
+/* Efecto hover en las tarjetas */
+.card:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta un poco cuando pasa el mouse */
+}
+
+
+
+/* Estilos generales del footer */
+.footer {
+    background-color: #222; /* Fondo oscuro para el footer */
+    color: #fff; /* Texto en color blanco */
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Contenedor del footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Sección de enlaces importantes */
+.footer-links,
+.footer-social,
+.footer-contact {
+    width: 30%; /* Ocupa el 30% del espacio disponible */
+}
+
+.footer-links h4,
+.footer-social h4,
+.footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Estilo de la lista de enlaces */
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li,
+.footer-social li {
+    margin-bottom: 8px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #fff; /* Color blanco para los enlaces */
+    text-decoration: none; /* Quitar subrayado */
+    font-size: 14px;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #f1c40f; /* Color dorado al pasar el ratón */
+}
+
+/* Estilo de la sección de contacto */
+.footer-contact p {
+    margin: 5px 0;
+}
+
+/* Sección inferior */
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: 1px solid #444; /* Línea sutil en la parte superior */
+   
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #aaa;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links,
+    .footer-social,
+    .footer-contact {
+        width: 100%; /* Cada sección ocupa el 100% en pantallas pequeñas */
+        text-align: center;
+    }
+}
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px; /* Reduce el espacio entre tarjetas en pantallas más pequeñas */
+    }
+}
+
+
